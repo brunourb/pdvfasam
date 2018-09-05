@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_name">Informe su nombre</string>
+    <string name="hint_email">Informe su e-mail</string>
+    <string name="hint_endereco">Informe su dirección</string>
+</resources>

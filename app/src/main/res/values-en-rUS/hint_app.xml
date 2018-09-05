@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_name">Enter your name</string>
+    <string name="hint_email">Enter your e-mail</string>
+    <string name="hint_endereco">Enter your address</string>
+</resources>
