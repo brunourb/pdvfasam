@@ -6,4 +6,85 @@
     android:layout_height="match_parent"
     tools:context="br.edu.fasam.mobile.pdvfasam.activities.ProdutoActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/txtNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/hint_name_product"/>
+
+        <EditText
+            android:id="@+id/txtDescricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/hint_description"/>
+
+        <EditText
+            android:id="@+id/txtNcm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/hint_ncm"/>
+
+        <EditText
+            android:id="@+id/txtCodBarra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/hint_codbarra"/>
+
+        <ImageView
+            android:id="@+id/imgViewFoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <EditText
+            android:id="@+id/txtQtd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/txtValorUnitario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/btnAddProduct"
+            android:onClick="addProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/label_btn_product"
+            tools:layout_editor_absoluteX="162dp"
+            tools:layout_editor_absoluteY="353dp" />
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

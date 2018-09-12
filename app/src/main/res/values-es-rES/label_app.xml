@@ -3,4 +3,7 @@
     <string name="label_name">Nombre</string>
     <string name="label_email">E-mail</string>
     <string name="label_endereco">Dirección</string>
+    <string name="label_btn_user">Usuario</string>
+    <string name="label_btn_product">Produto</string>
+    <string name="label_btn_order">Pedido</string>
 </resources>

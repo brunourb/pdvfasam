@@ -3,4 +3,7 @@
     <string name="hint_name">Informe su nombre</string>
     <string name="hint_email">Informe su e-mail</string>
     <string name="hint_endereco">Informe su dirección</string>
+    <string name="hint_description">Informe uma descrição</string>
+    <string name="hint_ncm">Informe o NCM (Nomenclatura do Mercosul)</string>
+    <string name="hint_codbarra">Informe o código de barras</string>
 </resources>

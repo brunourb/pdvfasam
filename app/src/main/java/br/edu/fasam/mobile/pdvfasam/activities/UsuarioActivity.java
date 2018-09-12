@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -32,6 +33,19 @@ public class UsuarioActivity extends DebugActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_usuario);
+
+        Bundle bundle = getIntent().getExtras();
+
+        if(bundle !=null){
+            String nome = bundle.getString("teste");
+            Toast.makeText(this,nome,Toast.LENGTH_LONG).show();
+
+        }
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState){
+        super.onSaveInstanceState(outState);
     }
 
     public void addUser(View view) {
@@ -77,6 +91,8 @@ public class UsuarioActivity extends DebugActivity {
 
         //Fazer o bind da listView com o adapter
         listView.setAdapter(simpleAdapter);
+
+        ///getIntent().putExtra("teste_tela","Teste passagem de parametros");
 
     }
 }

@@ -6,4 +6,32 @@
     android:layout_height="match_parent"
     tools:context="br.edu.fasam.mobile.pdvfasam.activities.HomeActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_btn_user"
+            android:onClick="exibir"
+            />
+
+        <Button
+            android:id="@+id/btnProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="exibir"
+            android:text="@string/label_btn_product" />
+
+        <Button
+            android:id="@+id/btnOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="exibir"
+            android:text="@string/label_btn_order" />
+
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>
