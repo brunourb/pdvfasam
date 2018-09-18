@@ -6,4 +6,27 @@
     android:layout_height="match_parent"
     tools:context="br.edu.fasam.mobile.pdvfasam.activities.PedidoActivity">
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Spinner
+            android:id="@+id/spnTipoPagamento"
+            android:entries="@array/tipoPagamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hint_order_number"
+            android:inputType="textPersonName"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

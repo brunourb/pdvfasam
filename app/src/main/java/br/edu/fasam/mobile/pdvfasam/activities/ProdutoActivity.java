@@ -2,6 +2,7 @@ package br.edu.fasam.mobile.pdvfasam.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -56,12 +57,20 @@ public class ProdutoActivity extends DebugActivity {
         ncm = txtNcm.getText().toString();
         codBarra = txtCodBarra.getText().toString();
 
-        qtd = new BigDecimal(txtQtd.getText().toString());
-        valorUnitario = new BigDecimal(txtValorUnitario.getText().toString());
+        String valor = txtQtd.getText().toString();
+
+        qtd = (valor!=null && !"".equals(valor))
+                ? new BigDecimal(valor) : BigDecimal.ZERO;
+
+        valor = txtValorUnitario.getText().toString();
+
+        valorUnitario = (valor!=null && !"".equals(valor))
+                ? new BigDecimal(valor) : BigDecimal.ZERO;
 
         BigDecimal valorTotal = qtd.multiply(valorUnitario);
 
         imgViewFoto.setImageResource(R.drawable.meme_obama);
+
 
         HashMap<String,String> map = new HashMap<String,String>();
         map.put("nome",nome);

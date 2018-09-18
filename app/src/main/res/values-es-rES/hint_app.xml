@@ -6,4 +6,5 @@
     <string name="hint_description">Informe uma descrição</string>
     <string name="hint_ncm">Informe o NCM (Nomenclatura do Mercosul)</string>
     <string name="hint_codbarra">Informe o código de barras</string>
+    <string name="hint_order_number">Informe o codigo del Pedido</string>
 </resources>
